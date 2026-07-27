@@ -1,0 +1,5 @@
+S3 Phoebe Buffay 0501111113 Upper East
+S2 Monica Geller 0501111112 West Village
+S5 Ross Geller 0501111115 Museum District
+S1 Rachel Green 0501111111 Soho
+S4 Joey Tribbiani 0501111114 Queens

@@ -1,0 +1,30 @@
+/* style.css */
+
+.root {
+    -fx-background-image: url("background.png");
+    -fx-background-size: cover; /* מכסה את כל השטח, חותך במידת הצורך */
+    -fx-background-position: center center; /* ממקם את התמונה במרכז */
+    -fx-background-repeat: no-repeat; /* מונע חזרתיות של התמונה */
+}
+
+/* סגנון כללי לכפתורים, לדוגמה */
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #4CAF50; /* ירוק */
+    -fx-text-fill: white;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* סגנון ל-VBox של הטפסים כדי להפריד מהרקע */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.85); /* רקע לבן שקוף */
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}

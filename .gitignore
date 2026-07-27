@@ -1,0 +1,17 @@
+# Compiled output
+bin/
+*.class
+
+# Course submission archive (contains student ID, duplicates src/)
+*.zip
+
+# Eclipse workspace-local metadata
+.settings/
+.metadata/
+.recommenders/
+*.launch
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

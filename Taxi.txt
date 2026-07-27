@@ -1,0 +1,15 @@
+Taxi Code: T1, Available: true, Min Price: 35.0, Type: Regular
+Responsible Managers: 
+
+Taxi Code: T2, Available: true, Min Price: 40.0, Type: Regular
+Responsible Managers: 
+
+Taxi Code: T3, Available: true, Min Price: 45.0, Type: Express, City Taxi: true, Extra Price: 10.0
+Responsible Managers: 
+
+Taxi Code: T4, Available: true, Min Price: 50.0, Type: Express, City Taxi: true, Extra Price: 12.0
+Responsible Managers: 
+
+Taxi Code: T5, Available: true, Min Price: 60.0, Type: Intercity, Cities: [Tel Aviv, Haifa], Max Hours: 3
+Responsible Managers: 
+
