@@ -5,6 +5,28 @@ object-oriented domain model with role-based access for three different user typ
 
 Written as a university OOP project (University of Haifa, B.Sc. Computer Science).
 
+<p align="center">
+  <img src="docs/login.jpg" width="360" alt="Login screen with role selection">
+</p>
+
+---
+
+## Screenshots
+
+Each role lands on its own dashboard after login. Managers dispatch rides; subscribers see only
+their own orders and taxis.
+
+| Subscriber dashboard | Manager dashboard |
+| --- | --- |
+| <img src="docs/subscriber-dashboard.jpg" width="400" alt="Subscriber dashboard"> | <img src="docs/manager-dashboard.jpg" width="400" alt="Manager dashboard"> |
+
+Placing an order — the manager picks a subscriber and a taxi, and the system validates the
+selection against that taxi type's rules before accepting it:
+
+<p align="center">
+  <img src="docs/add-order.jpg" width="380" alt="Add Order dialog">
+</p>
+
 ---
 
 ## Overview
