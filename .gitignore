@@ -1,3 +1,7 @@
+# Third-party image assets - not mine to redistribute, see README
+resources/background.png
+resources/logo.png
+
 # Compiled output
 bin/
 *.class

@@ -102,7 +102,7 @@ Seed and report data is read from / written to plain text files in the project r
 ```
 src/HW3/          domain classes and the JavaFX application entry point
 src/module-info.java
-resources/        stylesheet and images (loaded on the classpath)
+resources/        stylesheet, loaded on the classpath
 *.txt             seed / exported data
 ```
 
@@ -118,8 +118,13 @@ The project is set up as an Eclipse project - `.classpath` and `.project` are in
 imported directly via *File → Import → Existing Projects into Workspace*. It uses the JavaFX
 container from the [e(fx)clipse](https://www.eclipse.org/efxclipse/) plugin.
 
-`resources/` is registered as a source folder so the stylesheet and images resolve on the classpath
-at runtime.
+`resources/` is registered as a source folder so the stylesheet resolves on the classpath at
+runtime.
+
+**Image assets are not included.** The original build used a background photo and a taxi icon that
+aren't mine to redistribute, so they're left out of this repository. The app runs fine without
+them - the login screen simply falls back to a plain background. To restore the look in the
+screenshots above, drop your own `background.png` and `logo.png` into `resources/`.
 
 From the command line, with a JavaFX SDK available:
 
