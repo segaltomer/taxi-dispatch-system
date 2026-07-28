@@ -6,26 +6,36 @@ object-oriented domain model with role-based access for three different user typ
 Written as a university OOP project (University of Haifa, B.Sc. Computer Science).
 
 <p align="center">
-  <img src="docs/login.jpg" width="360" alt="Login screen with role selection">
+  <img src="docs/login.png" width="380" alt="Login screen with role selection">
 </p>
 
 ---
 
 ## Screenshots
 
-Each role lands on its own dashboard after login. Managers dispatch rides; subscribers see only
-their own orders and taxis.
+The role chosen at login determines which dashboard is built and what the user can reach.
 
-| Subscriber dashboard | Manager dashboard |
-| --- | --- |
-| <img src="docs/subscriber-dashboard.jpg" width="400" alt="Subscriber dashboard"> | <img src="docs/manager-dashboard.jpg" width="400" alt="Manager dashboard"> |
-
-Placing an order — the manager picks a subscriber and a taxi, and the system validates the
-selection against that taxi type's rules before accepting it:
+**Main Manager** — full system access: manage subscribers, managers, taxis and stations, assign
+taxis to managers, and persist any collection to file.
 
 <p align="center">
-  <img src="docs/add-order.jpg" width="380" alt="Add Order dialog">
+  <img src="docs/main-manager.png" width="620" alt="Main Manager dashboard">
 </p>
+
+The other two roles get a deliberately narrower surface — a manager dispatches rides, a subscriber
+only ever sees their own:
+
+| Manager | Subscriber |
+| --- | --- |
+| <img src="docs/manager.png" width="400" alt="Manager dashboard"> | <img src="docs/subscriber.png" width="400" alt="Subscriber dashboard"> |
+
+Placing an order, and inspecting a taxi. The lookup on the right is where the polymorphism shows
+up — `T5` is an `IntercityTaxi`, so it reports its served cities and hour cap alongside the
+computed total, fields the regular and express types don't have:
+
+| Add Order | Taxi lookup |
+| --- | --- |
+| <img src="docs/add-order.png" width="400" alt="Add Order dialog"> | <img src="docs/taxi-details.png" width="400" alt="Intercity taxi details"> |
 
 ---
 
