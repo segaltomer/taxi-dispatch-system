@@ -29,8 +29,8 @@ sorts before printing, here by last name:
   <img src="docs/assign-taxi.png" width="620" alt="Assign taxi to manager, over a sorted subscriber listing">
 </p>
 
-The other two roles get a deliberately narrower surface - a manager dispatches rides, a subscriber
-only ever sees their own orders:
+The other two roles see less. A manager dispatches rides; a subscriber only ever sees their own
+orders:
 
 | Manager | Subscriber |
 | --- | --- |
