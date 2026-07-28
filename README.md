@@ -22,12 +22,19 @@ taxis to managers, and persist any collection to file.
   <img src="docs/main-manager.png" width="620" alt="Main Manager dashboard">
 </p>
 
+Assigning a taxi to a manager, with the subscriber list rendered underneath — every listing view
+sorts before printing, here by last name:
+
+<p align="center">
+  <img src="docs/assign-taxi.png" width="620" alt="Assign taxi to manager, over a sorted subscriber listing">
+</p>
+
 The other two roles get a deliberately narrower surface — a manager dispatches rides, a subscriber
-only ever sees their own:
+only ever sees their own orders:
 
 | Manager | Subscriber |
 | --- | --- |
-| <img src="docs/manager.png" width="400" alt="Manager dashboard"> | <img src="docs/subscriber.png" width="400" alt="Subscriber dashboard"> |
+| <img src="docs/manager.png" width="400" alt="Manager dashboard"> | <img src="docs/subscriber.png" width="400" alt="Subscriber dashboard showing an order"> |
 
 Placing an order, and inspecting a taxi. The lookup on the right is where the polymorphism shows
 up — `T5` is an `IntercityTaxi`, so it reports its served cities and hour cap alongside the
