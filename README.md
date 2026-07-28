@@ -15,21 +15,21 @@ Written as a university OOP project (University of Haifa, B.Sc. Computer Science
 
 The role chosen at login determines which dashboard is built and what the user can reach.
 
-**Main Manager** — full system access: manage subscribers, managers, taxis and stations, assign
+**Main Manager** - full system access: manage subscribers, managers, taxis and stations, assign
 taxis to managers, and persist any collection to file.
 
 <p align="center">
   <img src="docs/main-manager.png" width="620" alt="Main Manager dashboard">
 </p>
 
-Assigning a taxi to a manager, with the subscriber list rendered underneath — every listing view
+Assigning a taxi to a manager, with the subscriber list rendered underneath - every listing view
 sorts before printing, here by last name:
 
 <p align="center">
   <img src="docs/assign-taxi.png" width="620" alt="Assign taxi to manager, over a sorted subscriber listing">
 </p>
 
-The other two roles get a deliberately narrower surface — a manager dispatches rides, a subscriber
+The other two roles get a deliberately narrower surface - a manager dispatches rides, a subscriber
 only ever sees their own orders:
 
 | Manager | Subscriber |
@@ -37,7 +37,7 @@ only ever sees their own orders:
 | <img src="docs/manager.png" width="400" alt="Manager dashboard"> | <img src="docs/subscriber.png" width="400" alt="Subscriber dashboard showing an order"> |
 
 Placing an order, and inspecting a taxi. The lookup on the right is where the polymorphism shows
-up — `T5` is an `IntercityTaxi`, so it reports its served cities and hour cap alongside the
+up - `T5` is an `IntercityTaxi`, so it reports its served cities and hour cap alongside the
 computed total, fields the regular and express types don't have:
 
 | Add Order | Taxi lookup |
@@ -58,7 +58,7 @@ Three roles are supported, each with its own set of permissions and its own UI f
 | --- | --- |
 | **Subscriber** | Place orders, view personal order history and assigned taxis |
 | **Manager** | Manage the taxis and stations under their responsibility |
-| **Main Manager** | Full system access — manage all managers, taxis, stations and subscribers |
+| **Main Manager** | Full system access - manage all managers, taxis, stations and subscribers |
 
 ## Domain model
 
@@ -78,9 +78,9 @@ Taxi
 
 Supporting types:
 
-- `Order` — a single ride request, linking a subscriber to a taxi and a station
-- `Station` — a pickup point with its own taxi roster
-- `systemDataBase` — the in-memory data layer
+- `Order` - a single ride request, linking a subscriber to a taxi and a station
+- `Station` - a pickup point with its own taxi roster
+- `systemDataBase` - the in-memory data layer
 
 ## Storage
 
@@ -114,7 +114,7 @@ domain model.
 
 **Requirements:** JDK 21 (developed against Liberica JDK 21 Full) and JavaFX.
 
-The project is set up as an Eclipse project — `.classpath` and `.project` are included, so it can be
+The project is set up as an Eclipse project - `.classpath` and `.project` are included, so it can be
 imported directly via *File → Import → Existing Projects into Workspace*. It uses the JavaFX
 container from the [e(fx)clipse](https://www.eclipse.org/efxclipse/) plugin.
 
